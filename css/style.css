@@ -115,7 +115,36 @@ header .menu .activo {
 }
 
 /* final header */
+/* inicio footer */
+footer {
+    background-color: var(--colorsecundario);
+    color: white;
+    text-align: center;
+    padding: 1.25rem 0rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
+footer a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: var(--colorprincipal);
+    }
+}
+
+
+.flecha a {
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 3.75rem;
+    right: 0.625rem;
+}
+
+/* final footer */
 
 /* inicio media querries */
 @media (min-width: 48rem) {
@@ -132,6 +161,10 @@ header .menu .activo {
             text-decoration: none;
             font-size: 110%;
         }
+    }
+
+    footer {
+        text-align: left;
     }
 }
 
