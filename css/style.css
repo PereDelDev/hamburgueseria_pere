@@ -146,6 +146,76 @@ footer a {
 
 /* final footer */
 
+/* inicio hero */
+
+.hero {
+    background-image: url(../images/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #777;
+    background-blend-mode: multiply;
+}
+
+.hero .container {
+    padding: 8.125rem 0.625rem;
+
+    & h1 {
+        font-family: var(--fuentetitulos);
+        font-size: 2.25rem;
+        color: white;
+    }
+
+    & h2 {
+        color: var(--colorprincipal);
+        font-size: 1.25rem;
+        margin: var(--margingrid) 0;
+    }
+
+    & p {
+        color: white;
+    }
+
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15rem;
+    color: white;
+    margin: var(--margingrid) 0;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+
+}
+
+.boton:hover {
+    background-color: transparent;
+    border: 1px solid var(--colorprincipal);
+    color: var(--colorprincipal);
+
+    & i {
+        transform: translateX(2px);
+        transition: transform 0.5s;
+    }
+}
+
+.hero .social {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+
+    & a {
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+    }
+
+}
+
+
+/* final hero */
+
+
 /* inicio media querries */
 @media (min-width: 48rem) {
 
