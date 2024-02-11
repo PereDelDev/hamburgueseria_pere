@@ -337,6 +337,7 @@ section#aboutus figure:hover :is(.marco, .imagen) {
 
 /* inicio blogs */
 section#blog .grid2 {
+    margin-bottom: 6em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -396,14 +397,68 @@ section#blog .grid2 {
 
 }
 
-
-
-
-
-
-
-
 /* final blogs */
+
+/* Inicio menu */
+
+section#menu {
+    background-color: var(--colorsecundario);
+
+    & h2 {
+        color: white;
+    }
+}
+
+section#menu .menu {
+    color: white;
+
+    & ul {
+        margin: 2rem 0;
+    }
+
+    & h3 {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    & div {
+        position: relative;
+        margin: 0.5rem 0;
+        height: 1rem;
+    }
+
+    & div hr {
+        display: block;
+        position: absolute;
+        width: 4.375rem;
+        border: 1px solid var(--colorprincipal);
+    }
+
+    & p {
+        margin: 0.5rem 0;
+        color: #aaa;
+        line-height: 1.4rem;
+    }
+}
+
+#menu .menu li {
+    padding: 1rem;
+}
+
+#menu .menu li.activo {
+    background-color: var(--colorprincipal);
+
+}
+
+#menu .menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* final menu */
 /* inicio media querries */
 @media(min-width: 37.5rem) {
     main section .grid article {
@@ -482,6 +537,9 @@ section#blog .grid2 {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    section#menu .menu {
+        width: 30%;
+    }
 }
 
 /* final media querries */
